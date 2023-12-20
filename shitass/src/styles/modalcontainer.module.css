@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  flex-direction: column;
+}
+.content {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh;
+  background-color: #f5f5f5;
+  flex-direction: column;
+  gap: 15px;
+}
+.flex {
+  display: flex;
+  gap: 11px;
+}
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: gray;
+}
+.birthday {
+  width: 100%;
+}
+.birthdaySelector {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.smalltext {
+  width: 90%;
+  font-size: 11px;
+  color: gray;
+}
