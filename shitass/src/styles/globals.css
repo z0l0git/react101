@@ -17,6 +17,7 @@
 }
 
 body {
+  height: 100vh;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +25,53 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+.square {
+  width: 50px;
+  height: 50px;
+}
+.light {
+  background-color: yellow;
+}
+.dark {
+  background-color: blue;
+}
+.chessboard {
+  gap: 0;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.login-form {
+  display: flex;
+  gap: 20px;
+  padding-right: 50px;
+  align-items: start;
+}
+.login-button {
+  background-color: #315a9e;
+  color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 23px;
+  border-radius: 2px;
+  cursor: pointer;
+  height: 25px;
+}
+.forgotten-account {
+  color: lightgray;
+  opacity: 50%;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bolder;
+  margin-left: 20px;
 }

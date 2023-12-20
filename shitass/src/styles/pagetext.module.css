@@ -1,0 +1,18 @@
+.content {
+  width: 600px;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  text-align: start;
+}
+.title {
+  color: #0766ff;
+  font-size: 65px;
+  font-weight: bolder;
+}
+.text {
+  line-height: 30px;
+  font-size: 30px;
+}

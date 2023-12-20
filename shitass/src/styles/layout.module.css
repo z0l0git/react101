@@ -1,0 +1,13 @@
+.layout {
+  width: 400px;
+  height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 8px 10px lightgray, -10px 8px 15px lightgray,
+    10px 8px 15px lightgray;
+}
