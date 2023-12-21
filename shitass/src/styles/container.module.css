@@ -1,10 +1,9 @@
 .container {
-  height: 100vh;
+  height: 66vh;
   display: flex;
-  justify-content: space-between;
+  gap: 100px;
   align-items: center;
-  padding-left: 500px;
-  padding-right: 500px;
+  justify-content: center;
   background-color: #f0f2f5;
 }
 .line {

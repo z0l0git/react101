@@ -1,5 +1,5 @@
 .content {
-  width: 600px;
+  width: 500px;
   display: flex;
   justify-content: start;
   flex-direction: column;
@@ -9,7 +9,7 @@
 }
 .title {
   color: #0766ff;
-  font-size: 65px;
+  font-size: 64px;
   font-weight: bolder;
 }
 .text {
