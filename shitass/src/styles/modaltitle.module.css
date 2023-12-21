@@ -1,5 +1,13 @@
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
 .title {
   font-weight: bolder;
-  font-size: 18px;
-  border: 1px solid black;
+  font-size: 35px;
+}
+.X {
+  font-size: 30px;
+  font-weight: 1000;
 }

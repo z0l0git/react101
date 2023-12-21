@@ -1,13 +1,13 @@
 import inputCss from "@/styles/input.module.css";
 
 const Input = (props) => {
-  const { placeholder, password = "", width = "" } = props;
+  const { placeholder, password = "", width = "", bg = "" } = props;
   return (
     <input
       placeholder={placeholder}
       type={password}
       className={inputCss.input}
-      style={{ width: width }}
+      style={{ width: width, background: bg }}
     ></input>
   );
 };

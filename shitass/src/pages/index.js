@@ -5,6 +5,7 @@ import Layout from "@/component/Layout";
 import Container from "@/styles/container.module.css";
 import PageText from "@/component/PageText";
 import Link from "next/link";
+import buttonCss from "@/styles/button.module.css";
 
 export default function Home() {
   const loginBtn = {
@@ -24,9 +25,10 @@ export default function Home() {
     text: "Create new account",
     txtColor: "white",
     bg: "#43b72a",
-    width: "600%",
+    width: "700%",
     height: "50px",
     radius: "5px",
+    fontSize: "15px",
   };
 
   return (
@@ -38,7 +40,7 @@ export default function Home() {
         <Button {...loginBtn} />
         <Button {...forgotBtn} />
         <hr className={Container.line}></hr>
-        <Link href="/modal" className={Container.btn}>
+        <Link href="/modal" className={buttonCss.button}>
           <Button {...createBtn}></Button>
         </Link>
       </Layout>

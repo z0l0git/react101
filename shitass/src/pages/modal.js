@@ -1,18 +1,31 @@
 import Input from "@/component/Input";
 import Button from "@/component/Button";
-import Layout from "@/component/Layout";
+import RadioButton from "@/component/RadioButton";
 import modalCss from "@/styles/modalcontainer.module.css";
-import PageText from "@/component/PageText";
+import YearSelector from "@/component/YearSelector";
 import ModalTitle from "@/component/ModalTitle";
 import MonthSelector from "@/component/MonthSelector";
+import DatSelector from "@/component/DatSelector";
 
 export default function Modal() {
   const inputLong = {
-    width: "90%",
+    width: "100%",
+    bg: "#f0f2f5",
   };
   const inputShort = {
-    width: "48%",
+    width: "60%",
+    bg: "#f0f2f5",
   };
+  const createBtn = {
+    text: "Sign Up",
+    txtColor: "white",
+    bg: "#01a401",
+    width: "47%",
+    height: "37px",
+    radius: "5px",
+    fontSize: "18px",
+  };
+
   return (
     <div className={modalCss.container}>
       <div className={modalCss.content}>
@@ -22,22 +35,26 @@ export default function Modal() {
           <Input {...inputShort} placeholder={"First Name"}></Input>
           <Input {...inputShort} placeholder={"Last Name"}></Input>
         </div>
-        <Input placeholder={"Email or phone number"}></Input>
-        <Input placeholder={"New Password"}></Input>
+        <Input {...inputLong} placeholder={"Email or phone number"}></Input>
+        <Input
+          {...inputLong}
+          placeholder={"New Password"}
+          password={"password"}
+        ></Input>
         <div className={modalCss.birthday}>
-          <p>Birthday</p>
+          <p className={modalCss.btext}>Birthday</p>
           <div className={modalCss.birthdaySelector}>
             <MonthSelector></MonthSelector>
-            <MonthSelector></MonthSelector>
-            <MonthSelector></MonthSelector>
+            <DatSelector></DatSelector>
+            <YearSelector></YearSelector>
           </div>
         </div>
         <div className={modalCss.birthday}>
-          <p>Gender</p>
+          <p className={modalCss.btext}>Gender</p>
           <div className={modalCss.birthdaySelector}>
-            <MonthSelector></MonthSelector>
-            <MonthSelector></MonthSelector>
-            <MonthSelector></MonthSelector>
+            <RadioButton text={"Male"}></RadioButton>
+            <RadioButton text={"Female"}></RadioButton>
+            <RadioButton text={"Custom"}></RadioButton>
           </div>
         </div>
         <p className={modalCss.smalltext}>
@@ -49,6 +66,9 @@ export default function Modal() {
           Cookies Policy. You may receive SMS Notifications from us and can opt
           out any time.
         </p>
+        <div className={modalCss.flexcenter}>
+          <Button {...createBtn}></Button>
+        </div>
       </div>
     </div>
   );
