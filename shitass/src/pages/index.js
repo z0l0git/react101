@@ -10,46 +10,40 @@ import buttonCss from "@/styles/button.module.css";
 import igCss from "@/styles/instacon.module.css";
 import InstaButton from "@/component/InstaButton";
 
+import { Giphy } from "@/component/GifFetch";
+
 export default function Home() {
-  const loginBtn = {
-    text: "Log In",
-    bg: "#1a77f2",
-    txtColor: "white",
-    width: "90%",
-    height: "50px",
-    radius: "5px",
-    fontSize: "20px",
-  };
-  const forgotBtn = {
-    text: "Forgot password?",
-    txtColor: "#1a77f2",
-  };
-  const createBtn = {
-    text: "Create new account",
-    txtColor: "white",
-    bg: "#43b72a",
-    width: "700%",
-    height: "50px",
-    radius: "5px",
-    fontSize: "15px",
-  };
-  const handleChange = (e) => {
-    console.log(e.target.value);
-  };
+  // const loginBtn = {
+  //   text: "Log In",
+  //   bg: "#1a77f2",
+  //   txtColor: "white",
+  //   width: "90%",
+  //   height: "50px",
+  //   radius: "5px",
+  //   fontSize: "20px",
+  // };
+  // const forgotBtn = {
+  //   text: "Forgot password?",
+  //   txtColor: "#1a77f2",
+  // };
+  // const createBtn = {
+  //   text: "Create new account",
+  //   txtColor: "white",
+  //   bg: "#43b72a",
+  //   width: "700%",
+  //   height: "50px",
+  //   radius: "5px",
+  //   fontSize: "15px",
+  // };
+  // const handleChange = (e) => {
+  //   console.log(e.target.value);
+  // };
 
   return (
-    <div className={Container.container}>
-      <PageText></PageText>
-      <Layout>
-        <Input placeholder={"Email or phone number"} onChange={handleChange} />
-        <Input placeholder={"Password"} password={"password"}></Input>
-        <Button {...loginBtn} />
-        <Button {...forgotBtn} />
-        <hr className={Container.line}></hr>
-        <Link href="/modal" className={buttonCss.button}>
-          <Button {...createBtn}></Button>
-        </Link>
-      </Layout>
+    <div className="flex w-[100vw] h-[100vh] justify-center items-center flex-wrap gap-10">
+      <div>
+        <Giphy />
+      </div>
     </div>
   );
 }
